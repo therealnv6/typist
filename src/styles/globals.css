@@ -25,3 +25,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.caret {
+  border-left: 3px solid white;
+  display: inline;
+  position: absolute;
+  transition: left 137ms linear, top 137ms linear;
+  animation: blink 450ms linear alternate infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
